@@ -27,7 +27,7 @@ const [likes,setLikes] = useState(like);
           src={props.post.imageUrl}
         />
       </div>
-      <LikeSection l = {setLikes}/>
+      <LikeSection setLikes = {setLikes} likes = {likes}/>
       <CommentSection
         postId={props.post.imageUrl}
         comments={props.post.comments}

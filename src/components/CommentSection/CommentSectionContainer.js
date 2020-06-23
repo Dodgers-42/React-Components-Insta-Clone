@@ -7,6 +7,7 @@ import "./Comment.css";
 const CommentSection = props => {
   // Add state for the comments
 
+  
   // console.log(props);
   // const [username, setUsername] = useState(name: "philzcoffee");
   // console.log(username);
@@ -14,12 +15,14 @@ const CommentSection = props => {
   // console.log(text);
 
   return (
+  
     <div className= "comment">
-      {/* {Comment.map(p => (
-        <
-      ))} */}
+      
       {/* map through the comments data and return the Comment component */}
-      {/* <CommentInput user={props.user}/> */}
+      {props.comments.map(p => (
+        <Comment key={p.id} comment={p} />
+      ))}
+      <CommentInput user={props.user}/>
     </div>
   );
 };
