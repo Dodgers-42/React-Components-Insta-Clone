@@ -7,15 +7,19 @@ import "./Comment.css";
 const CommentSection = props => {
   // Add state for the comments
 
-  // const [username, setUsername] = useState();
+  // console.log(props);
+  // const [username, setUsername] = useState(name: "philzcoffee");
   // console.log(username);
-  // const [text, setText] = useState();
+  // const [text, setText] = useState(text: "We've got more than just coffees!");
   // console.log(text);
 
   return (
-    <div>
+    <div className= "comment">
+      {/* {Comment.map(p => (
+        <
+      ))} */}
       {/* map through the comments data and return the Comment component */}
-      <CommentInput />
+      {/* <CommentInput user={props.user}/> */}
     </div>
   );
 };

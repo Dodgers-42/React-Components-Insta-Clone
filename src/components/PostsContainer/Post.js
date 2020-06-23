@@ -11,7 +11,7 @@ const like = 0
 // pass props in this file to
 const Post = props => {
   // set up state for the likes
-// const [likes,setLikes] = useState(like);
+const [likes,setLikes] = useState(like);
   return (
     <div className="post-border">
       <PostHeader
@@ -27,7 +27,7 @@ const Post = props => {
           src={props.post.imageUrl}
         />
       </div>
-      <LikeSection />
+      <LikeSection l = {setLikes}/>
       <CommentSection
         postId={props.post.imageUrl}
         comments={props.post.comments}
