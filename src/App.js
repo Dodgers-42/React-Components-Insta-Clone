@@ -22,7 +22,7 @@ const App = () => {
       {/* Add imported components here to render them */}
       <SearchBar />
       <PostsPage />
-      <PostsPage postData = {data} />
+      {/* <PostsPage postData = {data} /> */}
     </div>
 
   );

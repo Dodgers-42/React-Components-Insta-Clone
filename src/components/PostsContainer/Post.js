@@ -7,11 +7,13 @@ import LikeSection from "./LikeSection";
 import PostHeader from "./PostHeader";
 
 import "./Posts.css";
-const like = 0
+// const like = 0
+
 // pass props in this file to
 const Post = props => {
+  console.log(props);
   // set up state for the likes
-const [likes,setLikes] = useState(like);
+const [likes,setLikes] = useState(props.post.likes);
   return (
     <div className="post-border">
       <PostHeader
